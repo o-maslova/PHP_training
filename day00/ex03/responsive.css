@@ -1,0 +1,64 @@
+body {background-image: url(https://images.wallpaperscraft.ru/image/linii_polosy_svechenie_127355_3840x2160.jpg);}
+section {
+	min-height: 5px;
+	min-width: 50px;
+	text-align: left;
+	box-sizing: border-box;
+}
+.color {
+	background: white;
+}
+.color_1 {
+	background: lightpink;
+}
+.color_2 {
+	background :lightblue;
+}
+.color_3 {
+	background: khaki;
+}
+.color_4 {
+	background:  #afd879;
+}
+.color_5 {
+	background: palegreen;
+}
+.names {
+	text-align: center;
+	font-size: 3vw;
+	font: bold;
+}
+.sign {
+	text-align: center;
+	font-size: 0.9vw;
+	font-weight: 50;
+}
+.number {
+	text-align: left;
+	font-size: 20;
+}
+.massa {
+	text-align: right;
+	font-size: 1vw;
+	font-weight: 10;
+}
+table {
+	width: 100%;
+	color: black;
+	padding-top: 5px;
+}
+th {
+	padding: 0;
+	border: 2px solid black;
+}
+.big_letter {
+	text-align: center;
+	font-size: 2vw;
+	color: wheat;
+	font: bold;
+}
+block {
+	min-height: 40px;
+	min-width: 100px;
+	text-align: left;
+}

@@ -1,0 +1,144 @@
+body {
+	background: #505050;
+}
+.block_page {
+	padding-top: 10px;
+	position: fixed;
+	left: 185px;
+	box-shadow: 0 0 0 #909090;
+}
+.block_head {
+	display: flex;
+	width: 1113px;
+	height: 110px;
+	justify-content: space-between;
+	background: #909090;
+}
+.block_side_head {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	background: #909090;
+	box-shadow: 0 0 0 #909090;
+}
+.block_middle {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	width: 1113px;
+	box-shadow: 0 0 0 #909090;
+}
+.block_middle_side {
+	display: flex;
+	background: #909090;
+	flex-direction: column;
+	min-width: 120px;
+	min-height: 350px;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.green_block {
+	width: 410px;
+	height: 135px;
+	position: fixed;
+	top: 580px;
+	left: 150px;
+	background: #88ff89;
+}
+.mag_glass {
+	width: 170px;
+	height: 100px;
+	position: fixed;
+	top: 43px;
+	left: 1097px;
+	box-shadow: 0 0 0;
+}
+div {
+	border: transparent;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #090909;
+}
+#first_picture {
+	padding: 10px;
+	padding-bottom: 12px;
+}
+#close_reload {
+	border: transparent;
+	box-shadow: #909090;
+}
+#image {
+	padding: 2px;
+	padding-bottom: 5px;
+}
+#image_cluster {
+	border: 10px solid;
+	border-color: #909090;
+}
+#brick_wall {
+	background-image: url(resources/brick.jpg);
+	width: 100px;
+	height: 50px;
+	border-radius: 0;
+	box-shadow: 0 0 0;
+}
+#textbox {
+	margin-top: 3px;
+	padding-left: 10px;
+	border: transparent;
+	border-radius: 0px;
+	box-shadow: 0 0 0;
+}
+#sign_1 {
+	font-size: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 10px;
+}
+#sign_2 {
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#shadow {
+	text-shadow: 2px 3px 3px red
+}
+#kursiv {
+	padding: 10px;
+	font-style: italic;
+}
+#arrow {
+	width: 65px;
+	height: 65px;
+	padding: 2px;
+	padding-bottom: 5px;
+}
+#take {
+	width: 60px;
+	height: 65px;
+	padding: 2px;
+	padding-bottom: 5px;
+}
+#look {
+	width: 60px;
+	height: 60px;
+	border: solid;
+	border-color: red;
+	border-width: 5px;
+	border-radius: 5px;
+	padding: 1px;
+}
+#use {
+	width: 58px;
+	height: 63px;
+	padding: 2px;
+	padding-bottom: 5px;
+}
+#speak {
+	width: 70px;
+	height: 70px;
+	padding: 2px;
+	padding-bottom: 5px;
+}

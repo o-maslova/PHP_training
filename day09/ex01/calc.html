@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<style>
+		body {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+			height: 30%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		div {
+			text-align: center;
+			padding: 20px;
+		}
+		input {
+			width: 75px;
+			padding-right: 50px;
+		}
+		#tryme {
+			width: 30%;
+			height: 20%;
+			margin: 3%;
+			font-size: 1vw;
+			border-radius: 20%;
+		}
+	</style>
+	<script>
+		function calculate() {
+			var a = parseInt(document.getElementById('value1').value);
+			var b = parseInt(document.getElementById('value2').value);
+			var op = document.getElementById('operator').value;
+			var calculate = 'Error :(';
+			if (a >= 0 && b >= 0) {
+				if (op == 'add') {
+					calculate = a + b;
+				} else if (op == 'min') {
+					calculate = a - b;
+				} else if (op == 'mult') {
+					calculate = a * b;
+				} else if (op == 'div') {
+					if (b == 0) {
+						calculate = 'It\'s over 9000!';
+					} else {
+						calculate = a / b;
+					}
+				} else if (op == 'mod') {
+					if (b == 0) {
+						calculate = 'It\'s over 9000!';
+					} else {
+						calculate = a % b;
+					}
+				}
+			}
+			alert(calculate);
+			console.log(calculate);
+		}
+		function use() {
+			alert('Please, use me...');
+		}
+		setTimeout(use, 30000);
+	</script>
+</html>
+<body>
+	<div>
+		1st number: <input type="text" id="value1">
+	</div>
+	<select id="operator">
+		<option value="add">+</option>
+		<option value="min">-</option>
+		<option value="mult">*</option>
+		<option value="div">/</option>
+		<option value="mod">%</option>
+	</select>
+	<div>
+		2nd number: <input type="text" id="value2">
+	</div>
+	<input id="tryme" type="button" onclick="calculate()" value="Try me!">
+</body>

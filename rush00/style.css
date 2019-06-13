@@ -1,0 +1,112 @@
+body {
+	background: #FFB6C1;
+}
+.block_page {
+	padding-top: 10px;
+	position: fixed;
+	box-shadow: 0 0 0 #7007e7a4;
+	width: 100%;
+}
+.block_head {
+	display: flex;
+	background-image: url("./resources/nastol.com.ua_465.jpg");
+	box-shadow: 10px 10px 10px #090909;
+	border-radius: 10px;
+}
+.block_middle {
+	margin-top: 4%;
+	display: flex;
+	justify-content: space-around;
+	width: 75%;
+}
+figure {
+	text-align: center;
+}
+div.center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+div.header {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	text-align: center;
+}
+figure.smalcart {
+	min-height: 20%;
+	min-width: 20%;
+	padding: 1%;
+	padding-left: 2%;
+	margin: 5%;
+	border: 1px solid gray;
+	border-radius: 10px; 
+	background: #E6DEEA;
+}
+ul.navClass {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	padding: 0px;
+	list-style: none;
+	background-image: url("./resources/nastol.com.ua_465.jpg");
+	box-shadow: 10px 10px 10px #090909;
+	border-radius: 10px;
+}
+ul.navClass > li {
+	min-width: 20%;
+	line-height: 50px;
+	text-align: center;
+	opacity: .8;
+}
+ul.navClass > li > a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul.navClass > li > a:hover {
+	display: block;
+	border-radius: 10px;
+	background-color: grey;
+}
+ul.navClass > li > ul >li {
+	display: none;
+}
+ul.navClass > li > ul >li > a {
+	display: flex;
+	flex-direction: inherit;
+	justify-content: flex-start;
+	font-size: 15px;
+}
+ul.navClass > li:hover > ul >li {
+	display: block;
+}
+ul.navClass > li:hover > ul >li > a:hover {
+	display: block;
+	border-radius: 10px;
+	background-color: grey;
+}
+img > p {
+	font-size: 30px;
+	float: initial;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#first_picture {
+	padding: 10px;
+	padding-bottom: 12px;
+}
+#close_reload {
+	border: transparent;
+	box-shadow: #909090;
+}
+#image {
+	margin: 0.2%;
+	width: 250px;
+	height: 250px;
+	border: solid;
+	border-color: #d4a4a4;
+}
+#basket {
+	width: 20px;
+	height: 20px;
+}

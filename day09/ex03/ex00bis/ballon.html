@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Ballon</title>
+	</head>
+	<style>
+		#ballon {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+			height: 200px;
+			background: red;
+			border-radius: 100%;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+		var tmp = 200;
+		var i = 1;
+		var mouse_on = 0;
+		var arr = ['#FF0000', '#00FF00', '#0000FF'];
+		$( document ).ready(function () {
+			$('#ballon').click(grow);
+			$('#ballon').mouseleave(mouseLeave);
+		});
+
+		function mouseLeave() {
+			if (i == 2) {
+				i = 0;
+			}
+			$('#ballon').css("background-color", arr[i++]);
+			if (!mouse_on) {
+				arr = ['#0000FF', '#00FF00', '#FF0000'];
+				mouse_on = 1;
+			}
+			else {
+				arr = ['#FF0000', '#00FF00', '#0000FF'];
+				mouse_on = 0;
+			}
+			if (tmp > 200) {
+				tmp -= 5;
+				$('#ballon').css("width", tmp + "px");
+				$('#ballon').css("height", tmp + "px");
+			}
+		}
+		
+		function grow() {
+			if (tmp <= 420) {
+				tmp += 10;
+				$('#ballon').css("width", tmp + "px");
+				$('#ballon').css("height", tmp + "px");
+				if (i == 0) {
+					$('#ballon').css("background-color", arr[i++]);
+				}
+				else if (i == 1) {
+					$('#ballon').css("background-color", arr[i++]);
+				}
+				else {
+					$('#ballon').css("background-color", arr[i]);
+					i = 0;
+				}
+			}
+			if (tmp > 420)
+			{
+				tmp = 200;
+				$('#ballon').css("width", tmp + "px");
+				$('#ballon').css("height", tmp + "px");
+				$('#ballon').css("background-color", '#FF0000');
+				i = 1;
+			}
+		}
+	</script>
+	<body>
+		<div id="ballon"></div>
+	</body>
+</html>
